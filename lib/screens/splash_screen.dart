@@ -1,5 +1,5 @@
 import 'package:app01/screens/location_screen.dart';
-import 'package:app01/screens/signin_screen.dart';
+// import 'package:app01/screens/signin_screen.dart';
 import 'package:flutter/material.dart';
 
 class StartScreen extends StatefulWidget {
@@ -17,7 +17,7 @@ void initState() {
 
      Navigator.pushAndRemoveUntil(
         context,
-        MaterialPageRoute(builder: (c) => SigninScreen()),
+        MaterialPageRoute(builder: (c) => LocationScreen()),
         (route) => false,
       );
   });
