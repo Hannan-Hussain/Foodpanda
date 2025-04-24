@@ -1,5 +1,4 @@
 import 'package:app01/screens/location_screen.dart';
-import 'package:app01/screens/signin_screen.dart';
 import 'package:app01/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -20,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: LocationScreen(),
+      home: StartScreen(),
     );
   }
 }
