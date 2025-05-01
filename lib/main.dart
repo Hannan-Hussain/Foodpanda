@@ -1,3 +1,4 @@
+import 'package:app01/screens/Email_auth_screen.dart';
 import 'package:app01/screens/location_screen.dart';
 import 'package:app01/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
