@@ -84,6 +84,8 @@ class EmailAuthScreen extends StatelessWidget {
                 SizedBox(
                   height: 30,
                 ),
+                Text("Email"),
+                SizedBox(height: 5,),
                 CustomTextField(
                   onchange: (value) {},
                   controller: emailcontroller,
@@ -99,26 +101,7 @@ class EmailAuthScreen extends StatelessWidget {
 
 
 
-                InkWell(
-                   onTap: () {
-            Navigator.pushAndRemoveUntil(
-              context,
-              MaterialPageRoute(builder: (c) => PasswordAuth()),
-              (route) => false,
-            );
-            },
-                  child: Align(
-                    alignment: Alignment.topRight,
-                    child: Text(
-                      "With Password",
-                      style: TextStyle(
-                        color: Colors.pinkAccent,
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                ),
+             
                 Spacer(),
                 PrimaryButton(
                   title: "Continuue",

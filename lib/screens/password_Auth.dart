@@ -1,3 +1,4 @@
+import 'package:app01/screens/Forget_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:app01/screens/Login_screen.dart';
 import 'package:app01/widgets/custom_text_button.dart';
@@ -100,8 +101,28 @@ class _PasswordAuthState extends State<PasswordAuth> {
                       ),
                     ),
                   ),
+                  SizedBox(height: 10,),
 
-
+   InkWell(
+                   onTap: () {
+            Navigator.pushAndRemoveUntil(
+              context,
+              MaterialPageRoute(builder: (c) => ForgetScreen()),
+              (route) => false,
+            );
+            },
+                  child: Align(
+                    alignment: Alignment.topRight,
+                    child: Text(
+                      "I forget my password",
+                      style: TextStyle(
+                        color: Colors.pinkAccent,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
                   
                   
                   Spacer(),

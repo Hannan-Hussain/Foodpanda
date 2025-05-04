@@ -12,19 +12,22 @@ class PrimaryButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: ontap,
-      child: Container(
-        height: 58,
-        width: double.infinity,
-        decoration: BoxDecoration(
-          color: Colors.pinkAccent
-,          borderRadius: BorderRadius.circular(6),
-        ),
-        child: Center(
-          child: Text(
-            title,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 16,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        child: Container(
+          height: 58,
+          width: double.infinity,
+          decoration: BoxDecoration(
+            color: Colors.pinkAccent
+        ,          borderRadius: BorderRadius.circular(6),
+          ),
+          child: Center(
+            child: Text(
+              title,
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16,
+              ),
             ),
           ),
         ),

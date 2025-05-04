@@ -73,26 +73,29 @@ body: SafeArea(
 
       SizedBox(
                 width: double.infinity,
-                child:ElevatedButton (
-                  onPressed: (){
-                    Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (c)=>Authscreen()),
-                     (route) => false,
-                     );
-                  },
-                  style: ElevatedButton.styleFrom(   
-                   backgroundColor: Colors.pink,
-                  padding: EdgeInsets.symmetric(vertical: 15),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20)
+                child:Padding(
+                  padding: const EdgeInsets.only(left: 18, right: 18),
+                  child: ElevatedButton (
+                    onPressed: (){
+                      Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (c)=>Authscreen()),
+                       (route) => false,
+                       );
+                    },
+                    style: ElevatedButton.styleFrom(   
+                     backgroundColor: Colors.pink,
+                    padding: EdgeInsets.symmetric(vertical: 21),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8)
+                    ),
                   ),
-                ),
-                child: Center(
-                  child: Text("Continue",
-                  style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.white,
-                  ),),
-                ),
+                  child: Center(
+                    child: Text("Continue",
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.white,
+                    ),),
+                  ),
+                  ),
                 ),
               
                ),
