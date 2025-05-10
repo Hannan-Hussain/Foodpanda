@@ -1,4 +1,5 @@
 import 'package:app01/screens/Email_auth_screen.dart';
+import 'package:app01/screens/User_screen.dart';
 import 'package:app01/screens/location_screen.dart';
 import 'package:app01/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: StartScreen(),
+      home: UserScreen(),
     );
   }
 }

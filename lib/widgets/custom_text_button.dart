@@ -1,9 +1,10 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
   final TextEditingController controller;
   final String hintText;
-  final Widget prefixIcon;
+  final Widget? prefixIcon;
   final bool noicon;
   final bool obscureText;
   final Widget? suffixIcon;
@@ -12,9 +13,9 @@ class CustomTextField extends StatelessWidget {
   const CustomTextField({
     required this.controller,
     required this.hintText,
-    required this.prefixIcon,
-    required this.noicon,
-    required this.obscureText,
+    this.prefixIcon,
+    this.noicon = false,
+    this.obscureText =false,
     this.suffixIcon,
     this.onchange,
   });

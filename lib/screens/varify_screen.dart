@@ -1,3 +1,4 @@
+import 'package:app01/screens/Login_screen.dart';
 import 'package:app01/widgets/primary_button.dart';
 import 'package:flutter/material.dart';
 
@@ -12,6 +13,13 @@ class _VarifyScreenState extends State<VarifyScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+leading: InkWell(
+          onTap: () => Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (c)=>Authscreen()),  (route) => false, ),
+          child: const Icon(Icons.arrow_back_ios),
+        ),
+      ),
+      
     body: SafeArea(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),

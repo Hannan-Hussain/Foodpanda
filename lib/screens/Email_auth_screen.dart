@@ -1,5 +1,6 @@
 import 'package:app01/screens/Login_screen.dart';
 import 'package:app01/screens/password_Auth.dart';
+import 'package:app01/screens/varify_screen.dart';
 import 'package:app01/widgets/custom_text_button.dart';
 import 'package:app01/widgets/primary_button.dart';
 import 'package:flutter/material.dart';
@@ -85,7 +86,9 @@ class EmailAuthScreen extends StatelessWidget {
                   height: 30,
                 ),
                 Text("Email"),
-                SizedBox(height: 5,),
+                SizedBox(
+                  height: 5,
+                ),
                 CustomTextField(
                   onchange: (value) {},
                   controller: emailcontroller,
@@ -97,19 +100,31 @@ class EmailAuthScreen extends StatelessWidget {
                   noicon: false,
                   obscureText: obscureText,
                 ),
-                SizedBox(height: 10,),
-
-
-
-             
-                Spacer(),
+                SizedBox(
+                  height: 30,
+                ),
                 PrimaryButton(
-                  title: "Continuue",
+                  title: "Login with Password",
                   icon: Icons.arrow_forward,
                   ontap: () {
                     Navigator.pushAndRemoveUntil(
                       context,
                       MaterialPageRoute(builder: (c) => PasswordAuth()),
+                      (route) => false,
+                    );
+                  },
+                ),
+                SizedBox(
+                  height: 12,
+                ),
+                PrimaryButton(
+      
+                  title: "Send me Login link",
+                  icon: Icons.arrow_forward,
+                  ontap: () {
+                    Navigator.pushAndRemoveUntil(
+                      context,
+                      MaterialPageRoute(builder: (c) => VarifyScreen()),
                       (route) => false,
                     );
                   },
