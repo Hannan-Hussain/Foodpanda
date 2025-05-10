@@ -1,3 +1,4 @@
+import 'package:app01/screens/Email_auth_screen.dart';
 import 'package:flutter/material.dart';
 
 class Authscreen extends StatefulWidget {
@@ -143,7 +144,10 @@ class _AuthscreenState extends State<Authscreen> {
                  
                  SizedBox(height: 15,),
                 InkWell(
-                  onTap: (){},
+                  onTap: (){
+                    Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (c)=>EmailAuthScreen()),  (route) => false,
+                     );
+                  },
          
                   child: Container(
                     height: 58,
